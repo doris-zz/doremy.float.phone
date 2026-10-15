@@ -9,7 +9,7 @@ def ksFile = System.getenv("SHELL_KEYSTORE_FILE")
 def siteUrl = (System.getenv("SHELL_SITE_URL") ?: "https://example.invalid").replaceAll('/+$', '')
 
 android {
-    namespace 'app.floatphonetest.shell'
+    namespace 'app.floatphone.shell'
     // compileSdk 36：Health Connect 1.1.0 的硬性要求（它的 AAR 元数据要求
     // minCompileSdk=36）。这里只抬 compileSdk，**targetSdk 保持 34 不动**——
     // targetSdk 决定运行时的行为约定（如边到边布局），动它会影响已经调好的
